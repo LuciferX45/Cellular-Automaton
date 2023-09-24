@@ -69,7 +69,7 @@ class GameBoard:
             self.draw_grid()
             self.draw_cells()
             pygame.display.flip()
-            clock.tick(10)
+            clock.tick(50)
 
     def draw_cells(self):
         for y in range(self.ca.height):
