@@ -3,9 +3,9 @@ from CA import TwoDimensionalCA
 from drawing import DrawingBoard
 import pygame
 
-def build_dataset(width, height, birth_rule, survival_rule, filename):
+def build_dataset(birth_rule, survival_rule, filename):
     # Create a TwoDimensionalCA instance
-    ca = TwoDimensionalCA(width, height, birth_rule, survival_rule)
+    ca = TwoDimensionalCA(80, 60, birth_rule, survival_rule)
     
     # Create a DrawingBoard instance
     drawing_board = DrawingBoard()
@@ -25,11 +25,9 @@ def build_dataset(width, height, birth_rule, survival_rule, filename):
 
 # Example usage
 pygame.init()
-width = 10
-height = 10
 birth_rule = ['3']
 survival_rule = ['2', '3']
 generations = 10
 filename = 'dataset.csv'
-build_dataset(width, height, birth_rule, survival_rule, filename)
+build_dataset(birth_rule, survival_rule, filename)
 
