@@ -13,7 +13,7 @@ class GameBoard:
         self.bg_color = (0, 0, 0)
         self.grid_color = (128, 128, 128)
         self.cell_color = (255, 255, 255)
-
+                
         self.screen = pygame.display.set_mode((self.width*cell_size, 
                                                self.height*cell_size))
         pygame.display.set_caption("Cellular Automaton")
