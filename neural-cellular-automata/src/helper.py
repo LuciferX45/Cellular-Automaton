@@ -2,6 +2,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from PIL import Image
+from skimage.metrics import structural_similarity as compare_ssim
 
 import medmnist
 from medmnist import INFO, Evaluator
