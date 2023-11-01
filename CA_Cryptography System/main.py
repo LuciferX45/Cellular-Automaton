@@ -1,8 +1,5 @@
-import numpy as np
-import matplotlib.pyplot as plt
 from CA import OneDimensionalCA
 from RSRG import RandomStateRuleGen
-import cv2
 from converter import Conv
 from visualiser import Visuals
 from enc_dec import *
@@ -13,7 +10,7 @@ v = Visuals()
 convt = Conv()
 
 
-plaintext = "The quick fox"
+plaintext = "The quick brown fox"
 bin_string = convt.binary_string(plaintext)
 
 generator = RandomStateRuleGen()

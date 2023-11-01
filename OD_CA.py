@@ -41,7 +41,4 @@ class OneDimensionalCA:
 
     
 
-# ca = OneDimensionalCA(30, 100, 50)
-# ca.initialize(1)
-# ca.evolve()
-# ca.visualize()
+ 
